@@ -1,4 +1,5 @@
 # Demonstration of basic_datasets use
+ - clone this repo, or just download the `basic_datasets.py` module to use.  `demo_script.ipynb` is this README in notebook form
  - demonstrates use of functions in `basic_datasets` to generate datasets and corresponding labels
  - classification datasets for toy machine learning problems, emphasis on application to quantum machine learning
  - datasets generated in this notebook are $(N \times D)$: $D$ is the dimension of each datapoint and $N$ is the number of distinct points. 
