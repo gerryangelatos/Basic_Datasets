@@ -1,5 +1,7 @@
 # Demonstration of basic_datasets use
- - clone this repo, or just download the `basic_datasets.py` module to use.  `demo_script.ipynb` is this README in notebook form
+ - Written for ELE 396 quantum machine learning pojects
+ - clone this repo, or just download the `basic_datasets.py` module to use
+ - `demo_script.ipynb` is this README in notebook form
  - demonstrates use of functions in `basic_datasets` to generate datasets and corresponding labels
  - classification datasets for toy machine learning problems, emphasis on application to quantum machine learning
  - datasets generated in this notebook are $(N \times D)$: $D$ is the dimension of each datapoint and $N$ is the number of distinct points. 
@@ -19,7 +21,7 @@ from basic_datasets import *
 - here choosing n=2, so we are just classifying points based on the radius of the circle they lie on
 - generate points on each circle `x_circle[i]`, and then combine to form a single dataset
 - `Y_circle1` are class labels for corresponding points in `x_circle`, as colored in the plot below
-
+- example: https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.14.034034
 
 ```python
 # circles dataset
@@ -69,7 +71,8 @@ fig_circle.tight_layout()
 - same concept as circles above, a 2d dataset divided into 2 classes
 - now each class is a spiral arm starting at a specified angle, below angeles are $c=0$ and $\pi$
 - this is then harder to separate than the circles, which just require a radius calculation
-
+- example: https://doi.org/10.1080/09540090701398017
+- example: https://playground.tensorflow.org/
 
 ```python
 # Spirals dataset
@@ -129,7 +132,8 @@ fig_spiral.tight_layout()
 - dataset consists of 16 4-bit binary strings (
 - they are classified as to whether they contain a bar/stripe (exactly one row/column of 1s) or not
 - some different definitions exist in liturature, can just change target labelling appropriately
-
+- example: https://www.nature.com/articles/s41534-019-0157-8
+- example: https://iopscience.iop.org/article/10.1088/2058-9565/abb8e4
 
 ```python
 #BAS dataset
